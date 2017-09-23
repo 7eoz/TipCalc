@@ -186,12 +186,98 @@
             android:textColor="#000" />
 
         <EditText
-            android:id="@+id/total_custom"
+            android:id="@+id/custom_total"
             android:inputType="numberDecimal"
             android:text="0.00"
             tools:focusable="false"
             tools:longClickable="false" />
 
+    </TableRow>
+    <TableRow
+        android:id="@+id/table_row6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/share_text"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:text="Share with"
+            android:textColor="#000" />
+
+        <SeekBar
+            android:id="@+id/share_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_span="2"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:max="10"
+            android:progress="1" />
+
+        <TextView
+            android:id="@+id/share_result"
+            android:layout_height="match_parent"
+            android:text="1"
+            android:textColor="#000" />
+    </TableRow>
+    <TableRow
+        android:id="@+id/table_row7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/total_person_text"
+            android:gravity="right|center_vertical"
+            android:includeFontPadding="false"
+            android:paddingRight="5dp"
+            android:text="Total p/ person"
+            android:textColor="#000" />
+
+        <EditText
+            android:id="@+id/total_person_ten"
+            android:inputType="numberDecimal"
+            android:text="0.00"
+            tools:focusable="false"
+            tools:longClickable="false" />
+
+        <EditText
+            android:id="@+id/total_person_fifteen"
+            android:inputType="numberDecimal"
+            android:text="0.00"
+            tools:focusable="false"
+            tools:longClickable="false" />
+
+        <EditText
+            android:id="@+id/total_person_twenty"
+            android:inputType="numberDecimal"
+            android:text="0.00"
+            tools:focusable="false"
+            tools:longClickable="false" />
+    </TableRow>
+    <TableRow
+        android:id="@+id/table_row8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/shared_custom_total_text"
+            android:gravity="right|center_vertical"
+            android:includeFontPadding="false"
+            android:paddingRight="5dp"
+            android:layout_span="2"
+            android:text="Custom Total Shared"
+            android:textColor="#000" />
+
+        <EditText
+            android:id="@+id/shared_custom_total"
+            android:inputType="numberDecimal"
+            android:text="0.00"
+            tools:focusable="false"
+            tools:longClickable="false" />
     </TableRow>
 
 </TableLayout>
